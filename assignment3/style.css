@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.todo{
+    animation: all 0.5s;
+    background-color: skyblue;
+}
+.working{
+    animation: all 1s;
+    background-color: orangered ;
+}
+.done{
+    animation: all 1s;
+    background-color: green;
+}
+.app-container{
+    margin: 20px;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    flex:0.3;
+    border-radius: 4px;
+    background-color: #e7e5e5;
+    overflow: hidden;
+}
+.col h2{
+    padding: 20px;
+    color:white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container{
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+    min-height: 400px;
+    max-height: 400px;
+
+    
+}
+
+.draggable{
+    padding: 20px;
+    text-align: center;
+    background-color: #FFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    cursor: move;
+}
+.dragging{
+    display: none;
+}
+
+.
+
+
+

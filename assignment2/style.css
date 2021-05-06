@@ -1,0 +1,760 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif !important;
+}
+header{
+    font-family: Open Sans !important;
+    display: flex;
+    justify-content: space-between;
+    background-color: #33414f;
+    align-items: center;
+    height: 64px;
+    padding: 0 15px 0 25px;
+    font-weight: 500;
+
+}
+.brandLogo{
+    width:105px;
+    height: 27px;
+}
+.navLinks{
+    flex:0.5;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+}
+.heroContainer{
+    background-image: url(https://www.zoomcar.com/build/img/intro_bg.59b15d84c75cf310e76cc40155b90dc6.jpg);
+    height: 520px;
+    background-size: cover;
+    background-position: 50% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.heading{
+    font-size: 44px;
+    color: #fff;
+    font-weight: 600;
+}
+.heroContainer h1{
+    font-size: 18px;
+    color: #fff;
+    margin: 0 0 30px 0;
+    font-weight: 400;
+}
+
+.introBox{
+    
+    display: flex;
+    justify-content: center;
+}
+.introBox .search{
+    width: 540px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    line-height: 60px;
+    text-align: left;
+    text-indent: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    color: #323a44;
+    text-decoration: none;
+    display: block;
+}
+.introBox .search::after{
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    content: '';
+    height: 13px;
+    width: 13px;
+    border: 0;
+    border-right: 2px solid #323a44;
+    border-bottom: 2px solid #323a44;
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+.advantages{
+    background-color: #eee;
+padding: 30px 0;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.advantages h2{
+    color: #666;
+    font-size: 24px;
+}
+.advantages .items{
+    width: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.advantages p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.advantages .items >div>h3{
+    color: #70ad4d;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+.advantages .items > div{
+    width: 270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.advantages .items >div>p{
+    font-size: 12px;
+    
+}
+.advantages .items >div .image{
+    height: 56px;
+    background-size: cover;
+    margin-bottom: 5px;
+}
+.image{
+    height: 56px;
+    background-size: cover;
+    margin-bottom: 5px;
+}
+.image.fuel{
+    width: 49px;
+    background-position: 0 7px;
+}
+.image.charges{
+    width: 75px;
+background-position: -51px 8px;
+}
+.image.flexi{
+    background-position: -132px 5px;
+width: 85px;
+}
+.image.anywhere{
+    background-position: -400px 57px;
+width: 40px;
+}
+.image.assistance{
+    background-position: -315px 5px;
+width: 64px;
+}
+.image.damage{
+   background-position: -232px 4px;
+width: 65px;
+}
+
+
+.superMiles .promo{
+    color: #fff;
+    height: 350px;
+    background-size: cover;
+    background-position-y: 75%;
+    text-align: center;
+}
+.superMiles .promo .promoLayer{
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0,0,0,.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.superMiles .promo .promoLayer > div{
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100px;
+    margin-top: 40px;
+    background-size: cover;
+    background-position: 20px 0;
+    margin-bottom: 16px;
+}
+.superMiles .promo .promoLayer > h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.superMiles .promo .promoLayer > p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+}
+
+.superMiles .promo .promoLayer .dashed::after{
+    position: relative;
+    top: -5px;
+    margin: 0 10px;
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #9b9b9b;
+}
+.superMiles .promo .promoLayer .dashed::before{
+    position: relative;
+    top: -5px;
+    margin: 0 10px;
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #9b9b9b;
+}
+.features  {
+    width: 830px;
+    margin: 0 auto;
+    margin-top: -65px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+}
+.features .items {
+    width: 195px;
+}
+.features .items>p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+.features .items .box {
+    height: 130px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 0 15px;
+    box-shadow: 0 20px 20px -10px #eee;
+}
+.features .items .box >div{
+    background-size: 60px;
+    background-position: 16px 10px;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 75px;
+    margin: auto;
+}
+.features .items .box >p{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+ .superMiles>a{
+     width: 7%;
+     display: block;
+     margin: auto;
+    padding: 8px 45px;
+    margin-bottom: 30px;
+    border: 1px solid #666;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #323a44;
+    border-radius: 3px;
+ }
+ .cars{
+    background-size: cover;
+    height: 595px;
+    color: #fff;
+ }
+.cars>h2{
+   text-align: center;
+padding-top: 30px;
+}
+.cars>p{
+    text-align: center;
+font-size: 18px;
+margin: 0;
+}
+.cars .carItems{
+    width: 70%;
+margin: 0 auto;
+color: #fff;
+margin-top: 100px;
+position: relative;
+}
+.cars .carItems{}
+.cars .carItems >div .item>div>img{
+    height: 200px;
+}
+.cars .carItems >div .item>div .details{
+    width: 500px;
+}
+.cars .carItems >div .item>div .details .name{
+    font-size: 60px;
+    font-weight: 400;
+}
+.cars .carItems > div .item>p{
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0;
+}
+.cars .carItems >div .item>div .details .price{
+    font-size: 24px;
+    /* font-weight: 500; */
+}
+.cars .carItems >div .item>div .details .available{
+    font-size: 14px;
+    text-transform: uppercase;
+    /* font-weight: 500; */
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.arrow{
+    position: absolute;
+    top: 0;
+    height: 120px;
+    width: 120px;
+    border: 0;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    cursor: pointer;
+}
+.arrow.right{
+    transform: rotate(135deg);
+    left: -130px;
+}
+.arrow.left{
+    transform: rotate(-45deg);
+    right: -130px;
+}
+.howItWorks{
+    padding: 50px 0;
+    text-align: center;
+}
+.howItWorks h2{
+   color: #666;
+}
+.howItWorks p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.howItWorks .cardHolder{
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+}
+.howItWorks .cardHolder>div{
+        width: 200px;
+    height: 185px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 12px 22px 2px rgba(0,0,0,.1);
+    border: 1px solid #eee;
+    margin: 0 10px;
+
+}
+.howItWorks .cardHolder>div>img{
+    margin-top: 20px;
+}
+.howItWorks .cardHolder>div>h4{
+    text-transform: uppercase;
+    margin: 1.3rem 0;
+}
+.howItWorks .cardHolder>div>p{
+    font-size: 14px;
+    margin: 0.5rem 0;
+}
+.howItWorks>a{
+    padding: 10px 60px;
+    border: 1px solid #666;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #323a44;
+    border-radius: 3px;
+}
+.apps{
+    height: 602px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.apps >div{
+    width: 70%;
+margin: 0 auto;
+}
+.apps>div>h2{
+    color: #eee;
+}
+.apps>div>p{
+    margin: 0.5rem 0;
+    font-size: 18px;
+    color: #eee;
+    width: 50%;
+}
+.apps>div .store>a{
+    display: inline-block;
+    width: 140px;
+    height: 42px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.statistic{
+    display: flex;
+    height: 310px;
+    align-items: center;
+}
+.statistic .wrapStats{
+display: flex;
+justify-content: space-between;
+text-align: center;
+width: 100%;
+}
+.statistic .wrapStats >div {
+flex-grow: 1;
+}
+.statistic .wrapStats >div>img {
+   height: 75px;
+}
+.statistic .wrapStats >div:last-child img {
+   height: 25px;
+margin: 22px auto;
+}
+.statistic .wrapStats >div>p {
+    font-size: 18px;
+margin: 10px 0 0;
+}
+.stats{
+    font-size: 30px;
+font-weight: 600;
+}
+.info{
+       font-size: 14px;
+font-weight: 400;
+}
+.testinomialBg{
+    height: 540px;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+}
+.testinomialBg .quote{
+    width: 118px;
+height: 104px;
+margin: 80px auto 40px;
+display: inline-block;
+background-repeat: no-repeat;
+}
+.testinomialBg .items{
+    width: 900px;
+color: #fff;
+margin: 0 auto;
+position: relative;
+}
+.testinomialBg .items >div .testinomial > p{
+    margin: 1rem 0;
+    font-size: 22px;
+
+}
+.testinomialBg .items >div .testinomial > div{
+    color: #70ad4d;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+footer .primaryLinks{
+    background: #43505c;
+}
+footer  .wrapLinks{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+footer  .wrapLinks h4{
+    font-size: 16px;
+color: #fff;
+font-weight: 300;
+}
+footer .primaryLinks .wrapLinks .link{
+    text-align: center;
+    width: 25%;
+    display: block;
+    padding: 30px 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+footer .primaryLinks .wrapLinks .link:hover{
+    background: #323c45;
+    color: #bedaae;
+}
+footer .primaryLinks .wrapLinks .link >img{
+    width: 40px;
+    padding-bottom: 8px;
+}
+footer .primaryLinks .wrapLinks .link >p{
+    margin: 0.5rem 0;
+    text-align: center;
+}
+footer .pageLinks{
+    background: #33414f;
+padding-top: 27px;
+border-bottom: 1px solid hsla(0,0%,85%,.2);
+font-size: 18px;
+text-align: center;
+}
+footer .pageLinks .wrapList{
+   width: 960px;
+margin: 0 auto;
+font-size: 16px;
+}
+footer .pageLinks .wrapList>h4{
+   font-size: 16px;
+color: #fff;
+font-weight: 300;
+margin: 1.5rem 0;
+}
+footer .pageLinks .wrapList>ul{
+   list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    font-weight: 300;
+    color: #adb3b8;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+footer .pageLinks .wrapList >ul> li{
+    padding: 5px 0;
+    text-align: left;
+    width: calc(100% * 0.25 - 10px - 1px);
+}
+footer .pageLinks .wrapList>ul>li>a:hover{
+   color: #bedaae;
+}
+footer .pageLinks .wrapList>ul>li>a{
+   text-decoration: none;
+color: #fff;
+font-weight: 400;
+}
+.contact{
+    background: #33414f;
+padding: 25px 0 21px;
+color: #fff;
+font-weight: 300;
+}
+.contact .wrapList{
+    width: 960px;
+margin: 0 auto;
+font-size: 16px;
+}
+.contact .wrapList >h4{
+    font-size: 16px;
+color: #fff;
+font-weight: 300;
+margin: 1rem 0;
+}
+.contact .wrapList >p{
+    font-size: 14px;
+color: #adb3b8;
+margin: 0.5rem 0;
+}
+.contact .wrapList .social{
+    padding: 15px 0;
+}
+.contact .wrapList .social>a >img{
+    padding-right: 15px;
+width: 40px;
+height: 25px;
+}
+.contact .wrapList .copyRights{
+    font-size: 12px;
+    color: #adb3b8;
+}
+.content{
+    background: #eaeaea;
+color: #323a44;
+font-size: 13px;
+padding: 10px 0;
+}
+.content .wrapList{
+    width: 960px;
+margin: 0 auto;
+font-size: 13px;
+}
+.content h3{
+    font-size: 24px;
+margin: 20px 0 5px
+}
+.content ul{
+    list-style: disc;
+margin-left: 3em;
+margin-bottom: 1rem;
+}
+.content a{
+    text-decoration: none;
+color: #578e44;
+font-weight: 400;
+}
+.press{
+    margin-top: 20px;
+position: relative;
+padding: 20px;
+}
+.press .arrow {
+    position: absolute;
+    top: 40px;
+    height: 25px;
+    width: 25px;
+    border: 0;
+    border-right: 4px solid #000;
+    border-bottom: 4px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 20;
+}
+.press .arrow.right{
+    transform: rotate(135deg);
+margin-left: 20%;
+}
+.press .arrow.left{
+    transform: rotate(-45deg);
+margin-right: 20%;
+}
+.press .wrapList{
+    position: relative;
+    z-index: 100;
+    display: block;
+    flex-wrap: wrap;
+    overflow: auto;
+    white-space: nowrap;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    width: 960px;
+    padding: 0 10px;
+    transform-style: preserve-3d;
+    margin: auto;
+}
+.pressSlide{
+    
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    /* animation: rightToleft 1s; */
+}
+.rightToLeft{
+    animation: rightToLeft 1s ;
+}
+.leftToRight{
+    animation: leftToRight 1s ;
+}
+
+@keyframes leftToRight {
+  0%   {position: relative; left: -100%; }
+  100% {position: relative; left: 0; }
+}
+@keyframes rightToLeft {
+  0%   {position: relative; right: -100%; }
+  100% {position: relative; right: 0; }
+}
+
+.pressSlide .linkContainer{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 240px;
+    height: 70px;
+    margin: auto;
+    display: inline-flex;
+} 
+
+.pressSlide .linkContainer .link1 {
+    background-image: url("https://zoomcar.com/build/img/The-Business-Line.9582c9ea4e5e6aecf56ef79523b2bd57.png");
+    background-position: 0 35%;
+    width: 240px;
+    height: 70px;
+    background-repeat: no-repeat;
+}
+.pressSlide .linkContainer .link2 {
+    background-image: url("https://zoomcar.com/build/img/LiveMint.4c531c8198f15ebe7517db4444086199.png");
+    background-position: 45%;
+    width: 240px;
+    height: 70px;
+    background-repeat: no-repeat;
+}
+.pressSlide .linkContainer .link3 {
+    background-image: url("https://zoomcar.com/build/img/ET-Brand-Equity.120c0a2cd6c7da8179d9f13db35b9e42.png");
+    background-position: 2.5% 93.5%;
+    width: 130px;
+    background-size: contain;
+    height: 70px;
+     background-repeat: no-repeat;
+}
+.pressSlide .linkContainer .link4 {
+    background-image: url("https://zoomcar.com/build/img/CNBC.a1adc56311cc01301a8efe1440baedb7.png");
+    width: 130px;
+    background-size: contain;
+    height: 70px;
+     background-repeat: no-repeat;
+background-position: 27% 87.5%;
+}
+.pressSlide .linkContainer .link5 {
+    background-image: url("https://zoomcar.com/build/img/press.3334bff95770ee5c4c662186f7f6c49f.png");
+    background-position: 59% 19%;
+    width: 250px;
+    height: 70px;
+     background-repeat: no-repeat;
+}
+.pressSlide .linkContainer .link7 {
+    background-image: url("https://zoomcar.com/build/img/ET-Now.a6b70adda75bad5b0ca8f5d6ad58e472.png");
+    background-position: 50% 85.5%;
+    width: 130px;
+    background-size: contain;
+    height: 70px;
+     background-repeat: no-repeat;
+}
+.pressSlide .linkContainer .link6 {
+    background-image: url("https://zoomcar.com/build/img/press.3334bff95770ee5c4c662186f7f6c49f.png");
+    background-position: 4.8% 9.7%;
+    width: 200px;
+    height: 70px;
+     background-repeat: no-repeat;
+}
+.pressSlide .linkContainer .link8 {
+    background-image: url("https://zoomcar.com/build/img/press.3334bff95770ee5c4c662186f7f6c49f.png");
+    background-position: 36.8% 15.5%;
+    width: 120px;
+    height: 70px;
+     background-repeat: no-repeat;
+}
